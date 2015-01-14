@@ -21,9 +21,13 @@ I have added an additional feature in  Library Management System to authenticate
 On the more I thought it’s good to intimate a user about the fine he/she has incurred while the borrower is trying to check-in the book. So if the user is doing a check-in after the due date, he/she is intimated about the fine, and if willing then the borrower can pay the fine after the book is checked in or pay later.
 Above all a user can search for individual book borrower based on their card no and /or cardholder’s name. Note: Fine is computed $0.25 per day starting from the due date till the date the book is checked in.
 
+
 Technical Dependencies:- 
 
 Source Code :- PHP v 5.3 
+
 Database :- Mysql v5.6.21
+
 Operating System :- Windows/Mac/Linux 
+
 Browser to run the webpage:- Google Chrome / Mozilla Firefox
