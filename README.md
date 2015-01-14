@@ -3,7 +3,7 @@ Library Management System allows users to easily search for a book, checkout a b
 
 Following is a brief description of the working of individual webpages of the system :-
 
-Homepage - Authenticates the librarian, if failed no activity can be performed on the webpage.
+Homepage - Authenticates the librarian, if failed no activity can be performed on the system.
 
 Search Book - Allows the user to search any book given any combination of Book id and/or Book Title and /or Book Author. This provides flexibility to the librarians in searching the book in any order.
 
@@ -26,4 +26,4 @@ Technical Dependencies:-
 Source Code :- PHP v 5.3 
 Database :- Mysql v5.6.21 
 Operating System :- Windows/Mac/Linux 
-Browser to run the webpage:- Chrome (works best) /Firefox
+Browser to run the webpage:- Google Chrome / Morzilla Firefox
