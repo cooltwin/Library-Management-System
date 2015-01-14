@@ -1,5 +1,6 @@
 # Library-Management-System
 Library Management System allows users to easily search for a book, checkout a book, check-in a book, Add new borrowers to the system and Compute fines for the borrowed books. Above all it authenticates the librarian to the library database system to prevent any kind of misuse of the system.
+
 Following is a brief description of the working of individual webpages of the system :-
 
 Homepage - Authenticates the librarian, if failed no activity can be performed on the webpage.
@@ -18,7 +19,7 @@ Design Decisions and Justifications:-
 
 I have added an additional feature in  Library Management System to authenticate the users, making it secure for any database break-in attacks. This feature authenticates user’s based on their database credentials. Also while checking in a book, if no of books borrowed is more than 3(i.e. no of book loans >3) then the system rejects the checkin request. As this exceeds the maximum capacity of book loans permitted to a borrower.
 On the more I thought it’s good to intimate a user about the fine he/she has incurred while the borrower is trying to check-in the book. So if the user is doing a check-in after the due date, he/she is intimated about the fine, and if willing then the borrower can pay the fine after the book is checked in or pay later.
-A user can search for individual book borrower based on their card no and /or cardholder’s name. Note: Fine is computed $0.25 per day starting from the due date till the date the book is checked in.
+Above all a user can search for individual book borrower based on their card no and /or cardholder’s name. Note: Fine is computed $0.25 per day starting from the due date till the date the book is checked in.
 
 
 Technical Dependencies:- 
