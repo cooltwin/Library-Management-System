@@ -1,0 +1,72 @@
+
+C:\Users\cooltwin>mysql -h localhost -u root -p 
+Enter password: xxxxxxxxx 
+
+mysql> create database Library_Management_System; 
+Query OK, 1 row affected (0.00 sec) 
+
+mysql> use Library_Management_System; 
+Database changed 
+
+BOOK TABLE:- 
+
+mysql> create table BOOK (Book_id char(10) not null, Title varchar(200) not null, Constraint pk_Book primary key(Book_id)); 
+Query OK, 0 rows affected (0.28 sec) 
+
+mysql> source C:\Users\cooltwin\Desktop\database\db project\sql_book.sql 
+
+LIBRARY_BRANCH TABLE :- 
+
+mysql> create table LIBRARY_BRANCH (Branch_id int not null auto_increment, Branch_name varchar(100) not null, Address varchar(500), Constrait pk_Library_branch primary key(Branch_id), Constraint uk_Library_branch unique(Branch_name), Constraint uk_Lib_branch unique (Address)); 
+Query OK, 0 rows affected (0.28 sec) 
+
+mysql> source C:\Users\cooltwin\Desktop\database\db project\sql_library_branch.sql 
+Query OK, 1 row affected (0.03 sec) 
+Query OK, 1 row affected (0.04 sec) 
+Query OK, 1 row affected (0.06 sec) 
+Query OK, 1 row affected (0.07 sec) 
+Query OK, 1 row affected (0.03 sec) 
+
+BOOK_COPIES TABLE:- 
+
+mysql> create table BOOK_COPIES (Book_id char(10) not null, Branch_id int not null, No_of_copies int not null, Constraint pk_book_copies primary key(Book_id,Branch_id), Constraint fk_book_copies_bookid foreign key (Book_id) references BOOK(Book_id) on delete cascade on update cascade, Constraint fk_book_copies_branchid foreign key (Branch_id) references LIBRARY_BRANCH (Branch_id) on delete cascade on update cascade); 
+Query OK, 0 rows affected (0.37 sec) 
+
+mysql> source C:\Users\cooltwin\Desktop\database\db project\sql_book_copies.sql
+
+
+BORROWER TABLE:- 
+
+mysql> create table borrower(Card_no int not null auto_increment, Fname varchar(20) not null, Lname varchar(30) not null, Add 
+ress varchar(200) not null, Phone char(14) not null, constraint pk_borrower PRIMARY KEY(Card_no), constraint uk_borrower_card 
+holder UNIQUE KEY(Fname, Lname, Address)); 
+Query OK, 0 rows affected (0.27 sec) 
+
+mysql> source C:\Users\cooltwin\Desktop\database\db project\sql_borrower.sql 
+
+mysql> alter table borrower modify column Phone null; 
+
+BOOK_AUTHORS TABLE:- 
+
+mysql> create table BOOK_AUTHORS(Book_id char(10) not null, Author_name varchar(200) not null, Type int not null, Constraint 
+pk_book_authors PRIMARY KEY(Book_id, Author_name), Constraint fk_book_authors FOREIGN KEY(Book_id) references book(Book_id) o 
+n delete cascade on update cascade); 
+Query OK, 0 rows affected (0.29 sec) 
+
+mysql> source C:\Users\cooltwin\Desktop\database\db project\sql_book_authors.sql 
+
+BOOK_LOANS TABLE:-
+
+mysql> create table BOOK_LOANS (Loan_id int not null auto_increment, Book_id char(10) not null, Branch_id int not null, Card_no int not null,Date_out date not null,Due_date date not null, Date_in date,Constraint pk_book_loans primary key(Loan_id), Constraint fk_book_loans_bookid foreign key (Book_id) references BOOK(Book_id) on delete cascade on update cascade, Constraint fk_book_loans_branchid foreign key (Branch_id) references LIBRARY_BRANCH (Branch_id) on delete cascade on update cascade, Constraint fk_book_loans_cardno FOREIGN KEY(Card_no) references BORROWER(Card_no) on delete cascade on update cascade); 
+
+mysql> source C:\Users\cooltwin\Desktop\database\db project\sql_book_loans.sql 
+
+mysql> alter table book_loans auto_increment =12; 
+
+FINES TABLE :- 
+
+mysql> create table FINES (Loan_id int not null, Fine_amt numeric(6,2) not null, Paid boolean not null,Constraint pk_fines pr 
+imary key(Loan_id), Constraint fk_fines_loanid foreign key (Loan_id) references BOOK_LOANS(Loan_id) on delete cascade on update cascade); 
+
+mysql> source C:\Users\cooltwin\Desktop\database\db project\sql_fines.sql
+
