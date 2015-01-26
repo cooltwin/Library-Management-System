@@ -3,17 +3,17 @@ Library Management System allows users to easily search for a book, checkout a b
 
 Following is a brief description about the working of the system:-
 
-- Homepage.php - Authenticates the librarian, if failed no activity can be performed on the system.
+- Home.php - Authenticates the librarian, if failed no activity can be performed on the system.
 
-- Search Book.php - Allows the user to search any book given any combination of Book id and/or Book Title and /or Book Author. This provides flexibility to the librarians in searching the book in any order.
+- Book_Search.php - Allows the user to search any book given any combination of Book id and/or Book Title and /or Book Author. This provides flexibility to the librarians in searching the book in any order.
 
-- Checkout Book.php – Allows a user to check-out the book from a branch based on its availability and book borrowers credibility. Checkout is restricted for all borrowers who have exceeded 3 book loans or have any past fines due on them.
+- Checkout_Books.php – Allows a user to check-out the book from a branch based on its availability and book borrowers credibility. Checkout is restricted for all borrowers who have exceeded 3 book loans or have any past fines due on them.
 
-- Checkin Book.php - Allows a user to check-in the book. This feature first searches for all the book loans the borrower has taken which are not checked-in yet and then allows the user to check in the selected the book. It also intimates the user if the borrower has any fine due on that book.
+- Checkin_Books.php - Allows a user to check-in the book. This feature first searches for all the book loans the borrower has taken which are not checked-in yet and then allows the user to check in the selected the book. It also intimates the user if the borrower has any fine due on that book.
 
-- Add New Borrower.php - Allows the user to add a new borrower to the library loan system. The system generates a unique card no for each borrower. Uniqueness is defined based on the first name, last name and address details of a borrower.
+- Add_New_Borrower.php - Allows the user to add a new borrower to the library loan system. The system generates a unique card no for each borrower. Uniqueness is defined based on the first name, last name and address details of a borrower.
 
-- Manage Fine.php - This feature allows two types of fine computation. First – Computes the fine for all the borrowers who have taken a book loan. Second – Computes the fine for an individual book borrower who has taken a book loan.
+- Fine_Management.php - This feature allows two types of fine computation. First – Computes the fine for all the borrowers who have taken a book loan. Second – Computes the fine for an individual book borrower who has taken a book loan.
 
 Design Decisions and Justifications:-
 
