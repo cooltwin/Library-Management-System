@@ -13,7 +13,7 @@ Following is a brief description about the working of the system:-
 
 - Add New Borrower - Allows the user to add a new borrower to the library loan system. The system generates a unique card no for each borrower. Uniqueness is defined based on the first name, last name and address details of a borrower.
 
-- Fine Management - This feature allows two types of fine computation. First – Computes the fine for all the borrowers who have taken a book loan. Second – Computes the fine for an individual book borrower who has taken a book loan.
+- Manage Fine - This feature allows two types of fine computation. First – Computes the fine for all the borrowers who have taken a book loan. Second – Computes the fine for an individual book borrower who has taken a book loan.
 
 Design Decisions and Justifications:-
 
