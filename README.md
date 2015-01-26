@@ -7,9 +7,9 @@ Following is a brief description about the working of the system:-
 
 - Search a Book - Allows the user to search any book given any combination of Book id and/or Book Title and /or Book Author. This provides flexibility to the librarians in searching the book in any order.
 
-- Checkout Book – Allows a user to check-out the book from a branch based on its availability and book borrowers credibility. Checkout is restricted for all borrowers who have exceeded 3 book loans or have any past fines due on them.
+- Checkout a Book – Allows a user to check-out the book from a branch based on its availability and book borrowers credibility. Checkout is restricted for all borrowers who have exceeded 3 book loans or have any past fines due on them.
 
-- Checkin Book - Allows a user to check-in the book. This feature first searches for all the book loans the borrower has taken which are not checked-in yet and then allows the user to check in the selected the book. It also intimates the user if the borrower has any fine due on that book.
+- Checkin a Book - Allows a user to check-in the book. This feature first searches for all the book loans the borrower has taken which are not checked-in yet and then allows the user to check in the selected the book. It also intimates the user if the borrower has any fine due on that book.
 
 - Add New Borrower - Allows the user to add a new borrower to the library loan system. The system generates a unique card no for each borrower. Uniqueness is defined based on the first name, last name and address details of a borrower.
 
