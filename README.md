@@ -1,13 +1,10 @@
 # Library-Management-System
-Library Management System allows users to easily search for a book, checkout a book, check-in a book, Add new borrowers to the system and Compute fines for the borrowed books. Above all it authenticates the librarian to the library database system to prevent any kind of misuse of the system.
+Library Management System allows users to easily search for a book, checkout a book, check-in a book, Add new borrowers to the system and computes fine for the borrowed books. Above all it authenticates the librarian to the library database system to prevent any kind of misuse of the system.
 
 Following is a brief description of the working of individual webpages of the system :-
-
-Homepage - Authenticates the librarian, if failed no activity can be performed on the system.
-
-Search Book - Allows the user to search any book given any combination of Book id and/or Book Title and /or Book Author. This provides flexibility to the librarians in searching the book in any order.
-
-Checkout Book – Allows a user to check-out the book from a branch based on its availability and book borrowers credibility. Checkout is restricted for all borrowers who have exceeded 3 book loans or have any past fines due on them.
+- Homepage.php - Authenticates the librarian, if failed no activity can be performed on the system.
+- Search Book.php - Allows the user to search any book given any combination of Book id and/or Book Title and /or Book Author. This provides flexibility to the librarians in searching the book in any order.
+- Checkout Book.php – Allows a user to check-out the book from a branch based on its availability and book borrowers credibility. Checkout is restricted for all borrowers who have exceeded 3 book loans or have any past fines due on them.
 
 Checkin Book - Allows a user to check-in the book. This feature first searches for all the book loans the borrower has taken which are not checked-in yet and then allows the user to check in the selected the book. It also intimates the user if the borrower has any fine due on that book.
 
