@@ -5,7 +5,7 @@ Following is a brief description about the working of the system:-
 
 - Homepage - Authenticates the librarian, if failed no activity can be performed on the system.
 
-- Search Book - Allows the user to search any book given any combination of Book id and/or Book Title and /or Book Author. This provides flexibility to the librarians in searching the book in any order.
+- Search a Book - Allows the user to search any book given any combination of Book id and/or Book Title and /or Book Author. This provides flexibility to the librarians in searching the book in any order.
 
 - Checkout Book – Allows a user to check-out the book from a branch based on its availability and book borrowers credibility. Checkout is restricted for all borrowers who have exceeded 3 book loans or have any past fines due on them.
 
@@ -13,7 +13,7 @@ Following is a brief description about the working of the system:-
 
 - Add New Borrower - Allows the user to add a new borrower to the library loan system. The system generates a unique card no for each borrower. Uniqueness is defined based on the first name, last name and address details of a borrower.
 
-- Manage Fine - This feature allows two types of fine computation. First – Computes the fine for all the borrowers who have taken a book loan. Second – Computes the fine for an individual book borrower who has taken a book loan.
+- Compute Fine - This feature allows two types of fine computation. First – Computes the fine for all the borrowers who have taken a book loan. Second – Computes the fine for an individual book borrower who has taken a book loan.
 
 Design Decisions and Justifications:-
 
