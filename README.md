@@ -1,7 +1,7 @@
 # Library-Management-System
 Library Management System allows users to easily search for a book, checkout a book, check-in a book, Add new borrowers to the system and computes fine for the borrowed books. Above all it authenticates the librarian to the library database system to prevent any kind of misuse of the system.
 
-Following is a brief description of the working of individual webpages of the system :-
+Following is a brief description about the working of the system:-
 
 - Homepage.php - Authenticates the librarian, if failed no activity can be performed on the system.
 
