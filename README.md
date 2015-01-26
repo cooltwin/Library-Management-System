@@ -15,7 +15,9 @@ Following is a brief description about the working of the system:-
 
 - Compute Fine - This feature allows two types of fine computation. First – Computes the fine for all the borrowers who have taken a book loan. Second – Computes the fine for an individual book borrower who has taken a book loan.
 
+-----------------------------------------------------------------------------------------------------------------------------
 Design Decisions and Justifications:-
+-----------------------------------------------------------------------------------------------------------------------------
 
 I have added an additional feature in  Library Management System to authenticate the users, making it secure for any database break-in attacks. This feature authenticates user’s based on their database credentials. 
 
@@ -25,8 +27,9 @@ On the more I thought it’s good to intimate a user about the fine he/she has i
 
 Above all a user can search for individual book borrower based on their card no and /or cardholder’s name. Note: Fine is computed $0.25 per day starting from the due date till the date the book is checked in.
 
-
+-----------------------------------------------------------------------------------------------------------------------------
 Technical Dependencies:- 
+-----------------------------------------------------------------------------------------------------------------------------
 * Source Code :- PHP v 5.3 
 * Database :- Mysql v5.6.21
 * Operating System :- Windows/Mac/Linux 
