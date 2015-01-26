@@ -23,11 +23,7 @@ Above all a user can search for individual book borrower based on their card no 
 
 
 Technical Dependencies:- 
-
-Source Code :- PHP v 5.3 
-
-Database :- Mysql v5.6.21
-
-Operating System :- Windows/Mac/Linux 
-
-Browser to run the webpage:- Google Chrome / Mozilla Firefox
+* Source Code :- PHP v 5.3 
+* Database :- Mysql v5.6.21
+* Operating System :- Windows/Mac/Linux 
+* Browser to run the webpage:- Google Chrome / Mozilla Firefox
